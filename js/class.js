@@ -101,6 +101,7 @@ for(let i = 30; i < canvas.width; i += 30){
 
 teclaDirection(event){
  
+
     if(event.key == 'ArrowUp' && direction !== 'down') direction = 'up'
 
     if(event.key == 'ArrowLeft' && direction !== 'right') direction = 'left'
@@ -108,6 +109,14 @@ teclaDirection(event){
     if(event.key == 'ArrowDown' && direction !== 'up') direction = 'down'
 
     if(event.key == 'ArrowRight' && direction !== 'left') direction = 'right'
+
+    if(event == 'ArrowUp' && direction !== 'down') direction = 'up'
+
+    if(event == 'ArrowLeft' && direction !== 'right') direction = 'left'
+
+    if(event == 'ArrowDown' && direction !== 'up') direction = 'down'
+
+    if(event == 'ArrowRight' && direction !== 'left') direction = 'right'
 }
 
 drawFood(){

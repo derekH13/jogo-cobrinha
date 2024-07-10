@@ -19,7 +19,16 @@ body{
 
 canvas{
     background-color: #111;
+    width: 40%;
 
+}
+
+.interface{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+ 
 }
 
 .score{
@@ -27,6 +36,7 @@ canvas{
     flex-direction: column;
     justify-content: center;
     font-size: 1.8rem;
+    color: white;
    
 }
 
@@ -43,6 +53,8 @@ canvas{
     display: none;
     flex-direction: column;
     align-items: center;
+    color: white;
+    opacity: .7;
     z-index: 100;
 }
 
@@ -82,6 +94,34 @@ canvas{
 }
 
 
+.setas{
+    width: 20%;
+    position: absolute;
+    margin-left: -70%;
+    margin-top: 33rem;    
+    opacity: .5;
+}
+
+.cobra-bg{
+    width: 20%;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 28rem;    
+    opacity: .5;
+}
+
+.dropdown-menu li{
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover{
+    font-weight: 700;
+}
+
+
+
+
+
 @keyframes btn {
     0%{
         scale: 1;
@@ -98,4 +138,89 @@ canvas{
     100%{
         scale: 1.05;
     }
+}
+
+/* =============== navgation ==================== */
+
+.navbar{
+    background-color: #191919;
+}
+
+.navbar-brand {
+display: flex;
+justify-content: left;
+align-items: center;
+}
+
+
+.navbar-brand img{
+height: 40px;
+}
+
+.navbar-brand span{
+    font-size: 30px;
+    margin-left: .5rem;
+}
+
+.navbar-toggler-icon{
+    background-color: #525252;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+@media(max-width: 1000px){
+    .setas{
+        width: 80%;
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 33rem;    
+        opacity: .9;
+    }
+    
+    .cobra-bg{
+       display: none;
+    }
+
+    canvas{
+        width: 90%;
+        margin-top: -25rem;
+        flex-direction: column;
+    }
+
+    .direcionar{
+ 
+        position: absolute;
+        z-index: 100;
+        height: 330px;
+        width: 100%;
+        margin-top: 32rem;
+        display: flex;
+        padding-top: 2rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .setas-baixo{
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+    }
+    
+    .seta{
+        width: 110px;
+        height: 110px;
+        margin-top: 1rem;
+    }
+
+    .menu-screen{
+
+        height: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+
 }
